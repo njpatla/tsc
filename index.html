@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<body>
+    <button id="abrir-modal">Abrir Modal</button>
+
+    <dialog id="minha-modal">
+        <h2>TreinaWeb</h2>
+        <p>Escola online</p>
+        <button id="fechar-modal">Fechar Modal</button>
+    </dialog>
+
+    <script>
+        const abrirModal = document.querySelector('#abrir-modal');
+        const minhaModal = document.querySelector('#minha-modal');
+        const fecharModal = document.querySelector('#fechar-modal');
+
+        abrirModal.addEventListener('click', () => {
+            minhaModal.showModal();
+        })
+
+        fecharModal.addEventListener('click', () => {
+            minhaModal.close();
+        })
+
+
+    </script>
+</body>
+</html>
